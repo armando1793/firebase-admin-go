@@ -1,4 +1,5 @@
 module github.com/armando1793/firebase-admin-go/v4
+
 go 1.20
 
 require (
