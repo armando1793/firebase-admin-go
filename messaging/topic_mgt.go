@@ -25,7 +25,7 @@ import (
 )
 
 const (
-	iidEndpoint    = "https://iid.googleapis.com/iid"
+	iidEndpoint    = "https://iid.googleapis.com/iid/v1"
 	iidSubscribe   = "batchAdd"
 	iidUnsubscribe = "batchRemove"
 )

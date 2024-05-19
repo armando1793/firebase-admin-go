@@ -195,7 +195,7 @@ func (s iamSigner) Sign(ctx context.Context, b []byte) ([]byte, error) {
 		return nil, err
 	}
 
-	url := fmt.Sprintf("%s/projects/-/serviceAccounts/%s:signBlob", s.iamHost, account)
+	url := fmt.Sprintf("%s/v1/projects/-/serviceAccounts/%s:signBlob", s.iamHost, account)
 	body := map[string]interface{}{
 		"payload": base64.StdEncoding.EncodeToString(b),
 	}
@@ -240,7 +240,7 @@ func (s iamSigner) callMetadataService(ctx context.Context) (string, error) {
 		Client: http.DefaultClient,
 	}
 
-	url := fmt.Sprintf("%s/computeMetadata/instance/service-accounts/default/email", s.metadataHost)
+	url := fmt.Sprintf("%s/computeMetadata/v1/instance/service-accounts/default/email", s.metadataHost)
 	req := &internal.Request{
 		Method: http.MethodGet,
 		URL:    url,

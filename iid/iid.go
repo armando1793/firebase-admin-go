@@ -26,7 +26,7 @@ import (
 	"github.com/armando1793/firebase-admin-go/v4/internal"
 )
 
-const iidEndpoint = "https://console.firebase.google.com"
+const iidEndpoint = "https://console.firebase.google.com/v1"
 
 var errorMessages = map[int]string{
 	http.StatusBadRequest:          "malformed instance id argument",

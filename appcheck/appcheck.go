@@ -28,7 +28,7 @@ import (
 )
 
 // JWKSUrl is the URL of the JWKS used to verify App Check tokens.
-var JWKSUrl = "https://firebaseappcheck.googleapis.combeta/jwks"
+var JWKSUrl = "https://firebaseappcheck.googleapis.com/v1beta/jwks"
 
 const appCheckIssuer = "https://firebaseappcheck.googleapis.com/"
 

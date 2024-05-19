@@ -32,7 +32,7 @@ import (
 )
 
 const (
-	defaultMessagingEndpoint = "https://fcm.googleapis.com"
+	defaultMessagingEndpoint = "https://fcm.googleapis.com/v1"
 	defaultBatchEndpoint     = "https://fcm.googleapis.com/batch"
 
 	firebaseClientHeader   = "X-Firebase-Client"
