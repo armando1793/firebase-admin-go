@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/errorutils"
-	"github.com/armando1793/firebase-admin-go/internal"
+	"github.com/armando1793/firebase-admin-go/v4/errorutils"
+	"github.com/armando1793/firebase-admin-go/v4/internal"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
