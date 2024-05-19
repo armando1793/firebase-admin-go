@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"golang.org/x/oauth2"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
@@ -143,7 +143,7 @@ func NewClient(ctx context.Context, conf *internal.AuthConfig) (*Client, error) 
 	if isEmulator {
 		baseURL = fmt.Sprintf("http://%s/identitytoolkit.googleapis.com", authEmulatorHost)
 	}
-	idToolkitV1Endpoint := fmt.Sprintf("%s/v1", baseURL)
+	idToolkitV1Endpoint := fmt.Sprintf("%s", baseURL)
 	idToolkitV2Endpoint := fmt.Sprintf("%s/v2", baseURL)
 	userManagementEndpoint := idToolkitV1Endpoint
 	providerConfigEndpoint := idToolkitV2Endpoint
@@ -180,7 +180,7 @@ func NewClient(ctx context.Context, conf *internal.AuthConfig) (*Client, error) 
 //     the credentials to sign tokens locally.
 //   - If a service account email was specified during initialization (via firebase.Config struct),
 //     calls the IAMCredentials service with that email to sign tokens remotely. See
-//     https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob.
+//     https://cloud.google.com/iam/docs/reference/credentials/rest/projects.serviceAccounts/signBlob.
 //   - If the code is deployed in the Google App Engine standard environment, uses the App Identity
 //     service to sign tokens. See https://cloud.google.com/appengine/docs/standard/go/reference#SignBytes.
 //   - If the code is deployed in a different GCP-managed environment (e.g. Google Compute Engine),

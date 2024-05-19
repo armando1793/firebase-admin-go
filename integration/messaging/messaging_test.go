@@ -24,8 +24,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/v1/integration/internal"
-	"github.com/armando1793/firebase-admin-go/v1/messaging"
+	"github.com/armando1793/firebase-admin-go/integration/internal"
+	"github.com/armando1793/firebase-admin-go/messaging"
 )
 
 // The registration token has the proper format, but is not valid (i.e. expired). The intention of

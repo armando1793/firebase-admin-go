@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
+	"github.com/armando1793/firebase-admin-go/errorutils"
 )
 
 var sortableKeysResp = map[string]interface{}{

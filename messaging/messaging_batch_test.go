@@ -49,7 +49,7 @@ var testSuccessResponse = []fcmResponse{
 }
 
 const wantMime = "multipart/mixed; boundary=__END_OF_PART__"
-const wantSendURL = "/v1/projects/test-project/messages:send"
+const wantSendURL = "/projects/test-project/messages:send"
 
 func TestMultipartEntitySingle(t *testing.T) {
 	entity := &multipartEntity{
@@ -946,7 +946,7 @@ func TestSendMulticastWithCustomEndpoint(t *testing.T) {
 	ctx := context.Background()
 
 	conf := *testMessagingConfig
-	customBatchEndpoint := fmt.Sprintf("%s/v1", ts.URL)
+	customBatchEndpoint := fmt.Sprintf("%s", ts.URL)
 	optEndpoint := option.WithEndpoint(customBatchEndpoint)
 	conf.Opts = append(conf.Opts, optEndpoint)
 

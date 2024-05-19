@@ -19,8 +19,8 @@ import (
 	"context"
 	"log"
 
-	firebase "github.com/armando1793/firebase-admin-go/v1"
-	"github.com/armando1793/firebase-admin-go/v1/auth"
+	firebase "github.com/armando1793/firebase-admin-go"
+	"github.com/armando1793/firebase-admin-go/auth"
 	"google.golang.org/api/option"
 )
 

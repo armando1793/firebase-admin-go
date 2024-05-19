@@ -21,8 +21,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/errorutils"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"google.golang.org/api/option"
 )
 

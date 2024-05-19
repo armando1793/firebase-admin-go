@@ -30,7 +30,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 const (
@@ -156,7 +156,7 @@ func (s serviceAccountSigner) Email(ctx context.Context) (string, error) {
 }
 
 // iamSigner is a cryptoSigner that signs data by sending them to the IAMCredentials service. See
-// https://cloud.google.com/iam/docs/reference/credentials/rest/v1/projects.serviceAccounts/signBlob
+// https://cloud.google.com/iam/docs/reference/credentials/rest/projects.serviceAccounts/signBlob
 // for details regarding the REST API.
 //
 // IAMCredentials requires the identity of a service account. This can be specified explicitly
@@ -195,7 +195,7 @@ func (s iamSigner) Sign(ctx context.Context, b []byte) ([]byte, error) {
 		return nil, err
 	}
 
-	url := fmt.Sprintf("%s/v1/projects/-/serviceAccounts/%s:signBlob", s.iamHost, account)
+	url := fmt.Sprintf("%s/projects/-/serviceAccounts/%s:signBlob", s.iamHost, account)
 	body := map[string]interface{}{
 		"payload": base64.StdEncoding.EncodeToString(b),
 	}
@@ -240,7 +240,7 @@ func (s iamSigner) callMetadataService(ctx context.Context) (string, error) {
 		Client: http.DefaultClient,
 	}
 
-	url := fmt.Sprintf("%s/computeMetadata/v1/instance/service-accounts/default/email", s.metadataHost)
+	url := fmt.Sprintf("%s/computeMetadata/instance/service-accounts/default/email", s.metadataHost)
 	req := &internal.Request{
 		Method: http.MethodGet,
 		URL:    url,

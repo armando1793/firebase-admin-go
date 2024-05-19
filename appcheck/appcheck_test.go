@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/google/go-cmp/cmp"
 )

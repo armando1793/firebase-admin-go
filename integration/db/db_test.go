@@ -28,10 +28,10 @@ import (
 	"reflect"
 	"testing"
 
-	firebase "github.com/armando1793/firebase-admin-go/v1"
-	"github.com/armando1793/firebase-admin-go/v1/db"
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
-	"github.com/armando1793/firebase-admin-go/v1/integration/internal"
+	firebase "github.com/armando1793/firebase-admin-go"
+	"github.com/armando1793/firebase-admin-go/db"
+	"github.com/armando1793/firebase-admin-go/errorutils"
+	"github.com/armando1793/firebase-admin-go/integration/internal"
 )
 
 var client *db.Client
