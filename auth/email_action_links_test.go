@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"firebase.google.com/go/v4/errorutils"
+	"github.com/armando1793/firebase-admin-go/v1/errorutils"
 )
 
 const (

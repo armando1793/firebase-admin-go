@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"firebase.google.com/go/v4/auth"
+	"github.com/armando1793/firebase-admin-go/v1/auth"
 	"google.golang.org/api/iterator"
 )
 
