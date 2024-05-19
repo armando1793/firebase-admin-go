@@ -32,7 +32,7 @@ import (
 const (
 	maxLenPayloadCC     = 1000
 	defaultProviderID   = "firebase"
-	idToolkitV1Endpoint = "https://identitytoolkit.googleapis.com"
+	idToolkitV1Endpoint = "https://identitytoolkit.googleapis.com/v1"
 
 	// Maximum number of users allowed to batch get at a time.
 	maxGetAccountsBatchSize = 100
