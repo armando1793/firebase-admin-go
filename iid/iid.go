@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/armando1793/firebase-admin-go/errorutils"
-	"github.com/armando1793/firebase-admin-go/internal"
+	"github.com/armando1793/firebase-admin-go/v4/errorutils"
+	"github.com/armando1793/firebase-admin-go/v4/internal"
 )
 
 const iidEndpoint = "https://console.firebase.google.com"

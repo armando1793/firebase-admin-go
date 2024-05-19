@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"log"
 
-	firebase "github.com/armando1793/firebase-admin-go"
-	"github.com/armando1793/firebase-admin-go/db"
+	firebase "github.com/armando1793/firebase-admin-go/v4"
+	"github.com/armando1793/firebase-admin-go/v4/db"
 	"google.golang.org/api/option"
 )
 

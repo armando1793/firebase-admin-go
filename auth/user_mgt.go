@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/internal"
+	"github.com/armando1793/firebase-admin-go/v4/internal"
 )
 
 const (

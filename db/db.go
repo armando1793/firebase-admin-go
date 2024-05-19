@@ -25,7 +25,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/armando1793/firebase-admin-go/internal"
+	"github.com/armando1793/firebase-admin-go/v4/internal"
 	"golang.org/x/oauth2"
 	"google.golang.org/api/option"
 )

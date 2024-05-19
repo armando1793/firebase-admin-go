@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/integration/internal"
+	"github.com/armando1793/firebase-admin-go/v4/integration/internal"
 )
 
 func TestFirestore(t *testing.T) {

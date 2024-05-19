@@ -22,9 +22,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/errorutils"
-	"github.com/armando1793/firebase-admin-go/iid"
-	"github.com/armando1793/firebase-admin-go/integration/internal"
+	"github.com/armando1793/firebase-admin-go/v4/errorutils"
+	"github.com/armando1793/firebase-admin-go/v4/iid"
+	"github.com/armando1793/firebase-admin-go/v4/integration/internal"
 )
 
 var client *iid.Client
