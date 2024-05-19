@@ -39,7 +39,7 @@ import (
 )
 
 const (
-	idTokenCertURL            = "https://www.googleapis.com/robot/metadata/x509/securetoken@system.gserviceaccount.com"
+	idTokenCertURL            = "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com"
 	idTokenIssuerPrefix       = "https://securetoken.google.com/"
 	sessionCookieCertURL      = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/publicKeys"
 	sessionCookieIssuerPrefix = "https://session.firebase.google.com/"
