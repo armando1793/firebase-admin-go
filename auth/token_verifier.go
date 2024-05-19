@@ -490,7 +490,6 @@ func findMaxAge(resp *http.Response) (*time.Duration, error) {
 			return &duration, nil
 		}
 	}
-	// fuck you google fix your shit
-	d := 19 * time.Hour
-	return &d, nil
+
+	return nil, errors.New("Could not find expiry time from HTTP headers")
 }
