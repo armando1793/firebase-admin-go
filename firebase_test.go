@@ -29,7 +29,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/messaging"
+	"github.com/armando1793/firebase-admin-go/messaging"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"

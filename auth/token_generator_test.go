@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/errorutils"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 func TestEncodeToken(t *testing.T) {
@@ -323,7 +323,7 @@ func iamServer(t *testing.T, serviceAcct, signature string) *httptest.Server {
 	resp := map[string]interface{}{
 		"signedBlob": base64.StdEncoding.EncodeToString([]byte(signature)),
 	}
-	wantPath := fmt.Sprintf("/v1/projects/-/serviceAccounts/%s:signBlob", serviceAcct)
+	wantPath := fmt.Sprintf("/projects/-/serviceAccounts/%s:signBlob", serviceAcct)
 	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		defer r.Body.Close()
 		reqBody, err := ioutil.ReadAll(r.Body)

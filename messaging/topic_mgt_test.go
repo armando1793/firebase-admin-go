@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
+	"github.com/armando1793/firebase-admin-go/errorutils"
 )
 
 func TestSubscribe(t *testing.T) {
@@ -43,7 +43,7 @@ func TestSubscribe(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	client.iidEndpoint = ts.URL + "/v1"
+	client.iidEndpoint = ts.URL + ""
 
 	resp, err := client.SubscribeToTopic(ctx, []string{"id1", "id2"}, "test-topic")
 	if err != nil {
@@ -86,7 +86,7 @@ func TestUnsubscribe(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	client.iidEndpoint = ts.URL + "/v1"
+	client.iidEndpoint = ts.URL + ""
 
 	resp, err := client.UnsubscribeFromTopic(ctx, []string{"id1", "id2"}, "test-topic")
 	if err != nil {
@@ -128,7 +128,7 @@ func TestTopicManagementError(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	client.iidEndpoint = ts.URL + "/v1"
+	client.iidEndpoint = ts.URL + ""
 	client.iidClient.httpClient.RetryConfig = nil
 
 	cases := []struct {
@@ -191,7 +191,7 @@ func checkIIDRequest(t *testing.T, b []byte, tr *http.Request, op string) {
 	if tr.Method != http.MethodPost {
 		t.Errorf("Method = %q; want = %q", tr.Method, http.MethodPost)
 	}
-	wantOp := "/v1:" + op
+	wantOp := ":" + op
 	if tr.URL.Path != wantOp {
 		t.Errorf("Path = %q; want = %q", tr.URL.Path, wantOp)
 	}

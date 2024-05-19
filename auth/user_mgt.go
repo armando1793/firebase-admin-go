@@ -26,13 +26,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 const (
 	maxLenPayloadCC     = 1000
 	defaultProviderID   = "firebase"
-	idToolkitV1Endpoint = "https://identitytoolkit.googleapis.com/v1"
+	idToolkitV1Endpoint = "https://identitytoolkit.googleapis.com"
 
 	// Maximum number of users allowed to batch get at a time.
 	maxGetAccountsBatchSize = 100
@@ -357,7 +357,7 @@ func (u *UserToUpdate) validatedRequest() (map[string]interface{}, error) {
 			if err != nil {
 				return nil, err
 			}
-			// Request body ref: https://cloud.google.com/identity-platform/docs/reference/rest/v1/accounts/update
+			// Request body ref: https://cloud.google.com/identity-platform/docs/reference/rest/accounts/update
 			req["mfa"] = multiFactorEnrollments{mfaInfo}
 		} else {
 			req[k] = v

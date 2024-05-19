@@ -20,7 +20,7 @@ package auth
 import (
 	"context"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"google.golang.org/appengine/v2"
 )
 

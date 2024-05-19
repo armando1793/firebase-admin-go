@@ -32,10 +32,10 @@ import (
 	"testing"
 	"time"
 
-	firebase "github.com/armando1793/firebase-admin-go/v1"
-	"github.com/armando1793/firebase-admin-go/v1/auth"
-	"github.com/armando1793/firebase-admin-go/v1/auth/hash"
-	"github.com/armando1793/firebase-admin-go/v1/integration/internal"
+	firebase "github.com/armando1793/firebase-admin-go"
+	"github.com/armando1793/firebase-admin-go/auth"
+	"github.com/armando1793/firebase-admin-go/auth/hash"
+	"github.com/armando1793/firebase-admin-go/integration/internal"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 )

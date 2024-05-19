@@ -21,11 +21,11 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 const (
-	iidEndpoint    = "https://iid.googleapis.com/iid/v1"
+	iidEndpoint    = "https://iid.googleapis.com/iid"
 	iidSubscribe   = "batchAdd"
 	iidUnsubscribe = "batchRemove"
 )

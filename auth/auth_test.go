@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/errorutils"
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/errorutils"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
@@ -39,7 +39,7 @@ const (
 	credEnvVar                 = "GOOGLE_APPLICATION_CREDENTIALS"
 	testProjectID              = "mock-project-id"
 	testVersion                = "test-version"
-	defaultIDToolkitV1Endpoint = "https://identitytoolkit.googleapis.com/v1"
+	defaultIDToolkitV1Endpoint = "https://identitytoolkit.googleapis.com"
 	defaultIDToolkitV2Endpoint = "https://identitytoolkit.googleapis.com/v2"
 )
 
@@ -290,7 +290,7 @@ func TestNewClientExplicitNoAuth(t *testing.T) {
 
 func TestNewClientEmulatorHostEnvVar(t *testing.T) {
 	emulatorHost := "localhost:9099"
-	idToolkitV1Endpoint := "http://localhost:9099/identitytoolkit.googleapis.com/v1"
+	idToolkitV1Endpoint := "http://localhost:9099/identitytoolkit.googleapis.com"
 	idToolkitV2Endpoint := "http://localhost:9099/identitytoolkit.googleapis.com/v2"
 
 	os.Setenv(emulatorHostEnvVar, emulatorHost)

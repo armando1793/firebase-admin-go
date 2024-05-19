@@ -33,13 +33,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
 )
 
 const (
-	idTokenCertURL            = "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com"
+	idTokenCertURL            = "https://www.googleapis.com/robot/metadata/x509/securetoken@system.gserviceaccount.com"
 	idTokenIssuerPrefix       = "https://securetoken.google.com/"
 	sessionCookieCertURL      = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/publicKeys"
 	sessionCookieIssuerPrefix = "https://session.firebase.google.com/"

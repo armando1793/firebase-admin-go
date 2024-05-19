@@ -29,7 +29,7 @@ import (
 	"net/textproto"
 	"sync"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 const maxMessages = 500

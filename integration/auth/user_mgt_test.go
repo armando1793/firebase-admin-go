@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/armando1793/firebase-admin-go/v1/auth"
-	"github.com/armando1793/firebase-admin-go/v1/auth/hash"
+	"github.com/armando1793/firebase-admin-go/auth"
+	"github.com/armando1793/firebase-admin-go/auth/hash"
 	"google.golang.org/api/iterator"
 )
 

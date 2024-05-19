@@ -23,7 +23,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 // QueryNode represents a data node retrieved from an ordered query.

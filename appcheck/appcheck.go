@@ -24,11 +24,11 @@ import (
 	"github.com/MicahParks/keyfunc"
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/armando1793/firebase-admin-go/v1/internal"
+	"github.com/armando1793/firebase-admin-go/internal"
 )
 
 // JWKSUrl is the URL of the JWKS used to verify App Check tokens.
-var JWKSUrl = "https://firebaseappcheck.googleapis.com/v1beta/jwks"
+var JWKSUrl = "https://firebaseappcheck.googleapis.combeta/jwks"
 
 const appCheckIssuer = "https://firebaseappcheck.googleapis.com/"
 

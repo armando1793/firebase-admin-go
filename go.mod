@@ -1,4 +1,4 @@
-module github.com/armando1793/firebase-admin-go/v1
+module github.com/armando1793/firebase-admin-go
 
 go 1.20
 
