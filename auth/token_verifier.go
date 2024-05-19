@@ -39,7 +39,7 @@ import (
 )
 
 const (
-	idTokenCertURL            = "https://www.googleapis.com/robot/metadata/x509/securetoken@system.gserviceaccount.com"
+	idTokenCertURL            = "https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com"
 	idTokenIssuerPrefix       = "https://securetoken.google.com/"
 	sessionCookieCertURL      = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/publicKeys"
 	sessionCookieIssuerPrefix = "https://session.firebase.google.com/"
@@ -176,9 +176,9 @@ func (tv *tokenVerifier) VerifyToken(ctx context.Context, token string, isEmulat
 
 	// Verifying the signature requires synchronized access to a key cache and
 	// potentially issues an http request. Therefore we do it last.
-	// if err := tv.verifySignature(ctx, token); err != nil {
-	// 	return nil, err
-	// }
+	if err := tv.verifySignature(ctx, token); err != nil {
+		return nil, err
+	}
 
 	return payload, nil
 }
